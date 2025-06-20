@@ -1,0 +1,12 @@
+name: github action ejemplo
+
+on: 
+  workflow_dispatch:
+  push:
+
+jobs: 
+  escribe-algo:
+    name: Escribe algo
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'hello'
