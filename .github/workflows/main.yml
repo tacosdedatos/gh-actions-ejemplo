@@ -9,6 +9,10 @@ jobs:
     name: Escribe algo
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'hello'
+      - name: Setup Python
+        uses: actions/setup-python@v5.6.0
+        with:
+          python-version: '3.13'
+      - run: python -c 'print("hello")'
       - run: sleep 10
       - run: echo 'world'
